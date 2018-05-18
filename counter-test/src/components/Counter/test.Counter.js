@@ -1,17 +1,17 @@
-import React from 'react'
-import { shallow } from 'enzyme'
+import React from "react";
+import { shallow } from "enzyme";
 
-import Counter from './Counter'
+import Counter from "./Counter";
 
-describe('Counter', () => {
-  let component, props
+describe("Counter", () => {
+  let component, props;
 
   beforeEach(() => {
-    props = {}
-    component = shallow(<Counter {...props} />)
-  })
+    props = { store: { counter: 0 } };
+    component = shallow(<Counter {...props} />);
+  });
 
-  it('should', () => {
-    expect(component).toMatchSnapshot()
-  })
-})
+  it("should", () => {
+    expect(component).toMatchSnapshot();
+  });
+});

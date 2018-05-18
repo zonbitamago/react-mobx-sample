@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --watchAll",
     "start": "webpack-dev-server --open",
     "cca": "create-component-app --config ccarc.config.json",
     "build": "webpack --mode production --progress",
@@ -25,6 +25,9 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "css-loader": "^0.28.11",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^22.4.3",
     "mobx": "^4.2.1",
     "mobx-react": "^5.1.2",
     "style-loader": "^0.21.0",
