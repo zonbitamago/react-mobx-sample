@@ -13,7 +13,7 @@ class Counter extends Component {
     return (
       <div className="Counter">
         <p>Counter:{this.props.store.counter}</p>
-        <button id="button" onClick={this.props.store.plus}>
+        <button id="plus" onClick={this.props.store.plus}>
           Add
         </button>
         <button id="minus" onClick={this.props.store.minus}>
